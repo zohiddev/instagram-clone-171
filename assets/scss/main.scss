@@ -1,1 +1,140 @@
 @import './fonts', './variables', './normalize', './mixins';
+
+.wrapper {
+    position: relative;
+    font-family: 'Segoe UI';
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 986px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER - START */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 9px 0;
+    border-bottom: 1px solid $borderColor;
+    background-color: #fff;
+    z-index: 10;
+
+    &__row {
+        @include flex(center, space-between);
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__link {
+        width: 22px;
+        height: 22px;
+
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        border: 1px solid $borderColor;
+        border-radius: 3px;
+        padding: 5px;
+        gap: 5px;
+
+        &-input {
+            font-family: inherit;
+            border: none;
+            outline: none;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 129%;
+            color: $gray;
+
+            &::placeholder {
+                font-size: 14px;
+                line-height: 129%;
+                color: $gray;
+            }
+        }
+    }
+}
+
+/* HEADER - END */
+
+/* MAIN - START */
+
+.main {
+    padding-top: 82px;
+
+    &__row {
+        position: relative;
+    }
+
+    &__left {
+        width: calc($containerWidth * 64.9 / 100);
+        height: 100vh;
+    }
+
+    &__right {
+        width: calc($containerWidth - ($containerWidth * 64.9 / 100) - 30px);
+        position: fixed;
+        top: 82px;
+        right: calc((100vw - $containerWidth) / 2);
+        border: 1px solid blue;
+    }
+}
+
+.post {
+    border: 1px solid $borderColor;
+
+    &__header {
+        padding: 9px 16px;
+        @include flex(center, space-between);
+
+        &-left {
+            @include flex(center, unset);
+            gap: 16px;
+        }
+
+        &-img {
+            width: 32px;
+            height: 32px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+/* MAIN - END */

@@ -29,3 +29,140 @@ body,
 html {
   height: 100%;
 }
+
+.wrapper {
+  position: relative;
+  font-family: "Segoe UI";
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 986px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER - START */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 9px 0;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+  z-index: 10;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+}
+.header__link {
+  width: 22px;
+  height: 22px;
+}
+.header__link:not(:last-child) {
+  margin-right: 22px;
+}
+.header__link-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 5px;
+  gap: 5px;
+}
+.header__search-input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 129%;
+  color: #8e8e8e;
+}
+.header__search-input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 129%;
+  color: #8e8e8e;
+}
+.header__search-input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 129%;
+  color: #8e8e8e;
+}
+.header__search-input::placeholder {
+  font-size: 14px;
+  line-height: 129%;
+  color: #8e8e8e;
+}
+
+/* HEADER - END */
+/* MAIN - START */
+.main {
+  padding-top: 82px;
+}
+.main__row {
+  position: relative;
+}
+.main__left {
+  width: 613.954px;
+  height: 100vh;
+}
+.main__right {
+  width: 302.046px;
+  position: fixed;
+  top: 82px;
+  right: calc((100vw - 946px) / 2);
+  border: 1px solid blue;
+}
+
+.post {
+  border: 1px solid #dbdbdb;
+}
+.post__header {
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post__header-left {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 16px;
+}
+.post__header-img {
+  width: 32px;
+  height: 32px;
+}
+.post__header-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.post__img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.post__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* MAIN - END */
