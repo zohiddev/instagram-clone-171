@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Segoe";
+  src: url("../fonts/4735dd9ca25670c44600021e7428b8d3.eot"); /* IE9*/
+  src: url("../fonts/4735dd9ca25670c44600021e7428b8d3.eot?#iefix") format("embedded-opentype"), url("../fonts/4735dd9ca25670c44600021e7428b8d3.woff2") format("woff2"), url("../fonts/4735dd9ca25670c44600021e7428b8d3.woff") format("woff"), url("../fonts/4735dd9ca25670c44600021e7428b8d3.ttf") format("truetype"), url("../fonts/4735dd9ca25670c44600021e7428b8d3.svg#Segoe") format("svg"); /* iOS 4.1- */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+body,
+html {
+  height: 100%;
+}
